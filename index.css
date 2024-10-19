@@ -3,62 +3,138 @@
 
 body {
     font-family: "Maven Pro", sans-serif;
-    padding-top: 70px;
+    padding-top: 1px;
     background-color: #c9c2c1;
 }
 
 
 .full-screen {
-    padding: 7rem 0;
+    padding: 9rem 0;
 }
 
-nav {
-    background-color: rgba(255, 255, 255, 0.5); 
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 10px 20px; 
-    position: relative; 
-    width: 100% ;
-    z-index: 1000; 
-    backdrop-filter: blur(5px); 
-    border-end-start-radius: 50px;
-    border-bottom-right-radius: 100px;
-}
+/* style.css*/
 
-
-
-nav ul {
-    list-style-type: none;
+body {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
 }
 
-nav ul li {
-    margin-right: 60px; 
+.brand-title {
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
-nav ul li:last-child {
-    margin-right: 40px; 
+.navbar-links ul {
+    list-style: none;
+    display: flex;
+    transition: all 0.5s ease;
 }
 
-nav ul li a {
-    display: inline-block;
-    padding: 10px 20px;
-    color: red;
+.navbar-links ul li {
+    padding: 0 20px;
+}
+
+.navbar-links ul li a {
+    color: white;
     text-decoration: none;
-    transition: background-color 0.3s;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-links ul li a:hover {
+    color: red;
+}
+
+/* Toggle button */
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    right: 25px;
+
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Bars of the toggle button */
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
     border-radius: 10px;
+    transition: all 0.3s ease; /* Smooth transition for the bars */
 }
 
-nav ul li a:hover {
-    text-decoration: none; 
+/* Animate the toggle button to an X shape */
+.navbar-links.active ~ .toggle-button .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
 }
 
-nav ul li a:hover {
-    background-color:silver;
+.navbar-links.active ~ .toggle-button .bar:nth-child(2) {
+    opacity: 0;
 }
+
+.navbar-links.active ~ .toggle-button .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
+    .toggle-button {
+        display: flex;
+        
+        
+    }
+
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+    }
+
+    .navbar-links.active {
+        max-height: 500px;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-links ul li {
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
   
 .small-text {
     color: #5b5b5b;
@@ -99,7 +175,7 @@ h1 {
     display: inline-block;
     padding: 50px;
     vertical-align: top;
-    margin-top: 5px;
+    margin-top: none;
     min-width: 270px;
     position: relative;
 }
@@ -128,6 +204,33 @@ h1 {
 .animated-item:nth-child(3n+3) {
     animation-delay: 4s;
 }
+
+
+
+@media (max-width: 768px) {
+    .full-screen {
+        padding: 5rem 0;
+    }
+
+
+    .small-text {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin: 20px 0;
+    }
+
+    .animated-info {
+        padding: 20px;
+    }
+
+    .animated-item {
+        font-size: 28px;
+    }
+}
+
 
 @keyframes BottomTotop {
     0% {
