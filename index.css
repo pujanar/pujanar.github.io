@@ -1,34 +1,25 @@
 
 
-
-body {
-    font-family: "Maven Pro", sans-serif;
-    padding-top: 1px;
-    background-color: #c9c2c1;
-}
-
-
-.full-screen {
-    padding: 9rem 0;
-}
-
-/* style.css - Navigation Bar */
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  * {
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Maven Pro", sans-serif;
+    padding-top: 0px;
+    background-color: #c9c2c1;
 }
+
+.full-screen {
+    padding: 12rem 0;
+}
+
+/* style.css - Navigation Bar */
+
+  
 
 .navbar {
     display: flex;
@@ -270,7 +261,7 @@ h1 {
 
   /* Footer styles */
 footer {
-    background-color: #686767;
+    background-color:dimgrey;
     color: white;
     padding: 50px 20px;
 }
@@ -281,7 +272,7 @@ footer {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
-}
+
 
 .footer-section {
     flex: 1;
@@ -390,4 +381,3 @@ p {
     }
 }
 
-  
