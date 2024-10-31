@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pujana Rathnayake - Portfolio </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
+
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <nav class="navbar">
+        <div class="brand-title">Pujana </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <form>      
+      <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+      <input name="email" type="text" class="feedback-input" placeholder="Email" />
+      <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+      <input type="submit" value="SUBMIT"/>
+    </form>
+
+    <script>
+      const toggleButton = document.querySelector('.toggle-button');
+      const navbarLinks = document.querySelector('.navbar-links');
+  
+      toggleButton.addEventListener('click', () => {
+          navbarLinks.classList.toggle('active');
+          toggleButton.classList.toggle('active'); // Add this to trigger animation
+      });
+  </script>
