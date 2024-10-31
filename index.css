@@ -10,7 +10,7 @@
 body {
     font-family: "Maven Pro", sans-serif;
     padding-top: 0px;
-    background-color: #c9c2c1;
+    background-color: ;
 }
 
 .full-screen {
@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: rgb(30,30,40);;
     padding: 20px;
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 .navbar-links ul li a:hover {
-    color: red;
+    color: #CC6666;
 }
 
 /* Toggle button */
@@ -261,7 +261,7 @@ h1 {
 
   /* Footer styles */
 footer {
-    background-color:dimgrey;
+    background-color:rgb(30,30,40);;
     color: white;
     padding: 50px 20px;
 }
@@ -304,7 +304,7 @@ p {
 }
 
 .social-links a:hover {
-    color: rgb(196, 11, 11);
+    color: #CC6666
 }
 
 
@@ -379,5 +379,4 @@ p {
     .footer-section {
         margin: 20px 0;
     }
-}
-
+}}
