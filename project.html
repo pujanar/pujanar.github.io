@@ -12,64 +12,120 @@
 
   </head>
 
+ 
+
   <body>
 
-    <header>
 
-      <nav class="navbar">
-        <div class="brand-title">Pujana </div>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    </header>
-
-    <script>
-      const toggleButton = document.querySelector('.toggle-button');
-      const navbarLinks = document.querySelector('.navbar-links');
-  
-      toggleButton.addEventListener('click', () => {
-          navbarLinks.classList.toggle('active');
-          toggleButton.classList.toggle('active'); // Add this to trigger animation
-      });
-    </script>
-
-    <div class="container">
-      <div class="card">
-        <img src="ecolyproject.jpeg" alt="ecoly">
-        <div class="intro">
-          <h1>Ecoly</h1>
-          <p>Lorem ipsum dolor dsf kerjger erkjer erkger gekjrg erkerej gekrgjr ekjr.</p>
-        </div>
+    <nav class="navbar">
+      <div class="brand-title">Pujana </div>
+      <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
       </div>
+  </nav>
 
-      <div class="card">
-        <img src="ecolyproject.jpeg" alt="ecoly">
-        <div class="intro">
-          <h1>Ecoly</h1>
-          <p>Lorem ipsum dolor dsf kerjger erkjer erkger gekjrg erkerej gekrgjr ekjr.</p>
-        </div>
-      </div>
 
-      <div class="card">
-        <img src="ecolyproject.jpeg" alt="ecoly">
-        <div class="intro">
-          <h1>Ecoly</h1>
-          <p>Lorem ipsum dolor dsf kerjger erkjer erkger gekjrg erkerej gekrgjr ekjr.</p>
-        </div>
+  <script>
+    const toggleButton = document.querySelector('.toggle-button');
+    const navbarLinks = document.querySelector('.navbar-links');
+
+    toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active');
+        toggleButton.classList.toggle('active'); // Add this to trigger animation
+    });
+  </script>
+
+
+
+</head>
+
+<body class="pcards">
+  <div class="container">
+      <div class="projects-grid">
+          <!-- Project Card 1 -->
+          <div class="project-card">
+              <div class="project-image">
+                  <!-- Replace the src with your image URL -->
+                  <img src="ecolyproject.jpeg" alt="E-Commerce Platform">
+              </div>
+              <div class="project-content">
+                  <h3 class="project-title">E-Commerce Platform</h3>
+                  <p class="project-description">A full-stack e-commerce solution with shopping cart functionality and payment integration.</p>
+                  <div class="project-tags">
+                      <span class="tag">React</span>
+                      <span class="tag">Node.js</span>
+                      <span class="tag">MongoDB</span>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="project-card">
+              <div class="project-image">
+                  <!-- Replace the src with your image URL -->
+                  <img src="ecolyproject.jpeg" alt="Weather App">
+              </div>
+              <div class="project-content">
+                  <h3 class="project-title">Weather App</h3>
+                  <p class="project-description">Real-time weather forecasting application using weather API integration.</p>
+                  <div class="project-tags">
+                      <span class="tag">JavaScript</span>
+                      <span class="tag">API</span>
+                      <span class="tag">CSS3</span>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="project-card">
+              <div class="project-image">
+                  <!-- Replace the src with your image URL -->
+                  <img src="ecolyproject.jpeg" alt="Task Manager">
+              </div>
+              <div class="project-content">
+                  <h3 class="project-title">Task Manager</h3>
+                  <p class="project-description">A collaborative task management tool with real-time updates and team features.</p>
+                  <div class="project-tags">
+                      <span class="tag">Vue.js</span>
+                      <span class="tag">Firebase</span>
+                      <span class="tag">Sass</span>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Project Card 4 -->
+          <div class="project-card">
+              <div class="project-image">
+                  <!-- Replace the src with your image URL -->
+                  <img src="ecolyproject.jpeg" alt="Portfolio Website">
+              </div>
+              <div class="project-content">
+                  <h3 class="project-title">Portfolio Website</h3>
+                  <p class="project-description">A responsive personal portfolio website showcasing projects and skills.</p>
+                  <div class="project-tags">
+                      <span class="tag">HTML5</span>
+                      <span class="tag">CSS3</span>
+                      <span class="tag">JavaScript</span>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
+  </div>
+</body>
+</html>
+
+
+    
 
   </body>
 
