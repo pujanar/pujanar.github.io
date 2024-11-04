@@ -1,20 +1,27 @@
 
-
 * {
-    margin: 0px;
-    padding: 0px;
+   
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+
 }
 
 
 body {
     font-family: "Maven Pro", sans-serif;
-    padding-top: 0px;
-    background-color: ;
+    padding-top: 0;
+    background-image:url(BGPR.png) ;
+    background-position: center;
+
+   
+    
 }
 
 .full-screen {
     padding: 12rem 0;
+    
+    width: 450;
 }
 
 /* style.css - Navigation Bar */
@@ -23,6 +30,7 @@ body {
 
 .navbar {
     display: flex;
+   
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(45deg, #0f0c29, #302b63);
@@ -95,8 +103,29 @@ body {
 }
 
 @media (max-width: 768px) {
+
+
+    .small-text {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin: 25px 6px;
+    }
+
+    .animated-info {
+        padding: 25px ;
+    }
+
+    .animated-item {
+        font-size: 31px;
+    }
+
     .toggle-button {
         display: flex;
+        padding: px;
+       
         
         
     }
@@ -159,11 +188,15 @@ h1 {
     margin: 28px 0;
 }
   
-  
+.container{
+
+    margin-top: -30px;
+    margin: 10px;
+}
 
 .animated {
     position: relative;
-    padding: 50px;
+    padding: 5px;
 }
   
 
@@ -172,7 +205,7 @@ h1 {
     padding: 40px;
     vertical-align: top;
     margin-top: none;
-    min-width: 300px;
+    min-width: 350px;
     position: relative;
 }
   
@@ -205,7 +238,8 @@ h1 {
 
 .btn-about {
     display: inline-block;
-    padding: 12px 24px;
+    margin: 50px;
+    padding: 12px 20px;
     background-color: #c40b0b;
     color: white;
     text-decoration: none;
@@ -222,33 +256,6 @@ h1 {
     box-shadow: 0 5px 15px rgba(196, 11, 11, 0.2);
 }
 
-
-
-
-
-@media (max-width: 768px) {
-    .full-screen {
-        padding: 2rem ;
-    }
-
-
-    .small-text {
-        font-size: 15px;
-    }
-
-    h1 {
-        font-size: 2em;
-        margin: 25px 6px;
-    }
-
-    .animated-info {
-        padding: 25px ;
-    }
-
-    .animated-item {
-        font-size: 31px;
-    }
-}
 
 
 @keyframes BottomTotop {
@@ -369,10 +376,130 @@ h1 {
     }
 }
 
-@media (max-width: 480px) {
+ @media (max-width: 440px) {
+   
     .quick-links, .social-links {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
+
 }
+
+
+
+
+
+/* PROJECT CSS ELEMENTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .project-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the container properly */
+    transition: transform 0.3s ease; /* Add smooth zoom effect */
+  }
+  
+  .project-card:hover .project-image img {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  .project-content {
+    padding: 20px;
+  }
+  
+  .project-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .project-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .tag {
+    background: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    color: #555;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #d0d0d0;
+  }
+  
+  @media (max-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+  
+    .project-card {
+        margin-bottom: 15px;
+    }
+  }
+ 

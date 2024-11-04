@@ -181,7 +181,20 @@
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 440px) {
+    .about-section {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+        align-items: center; /* Centers vertically */
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto; /* Centers the section itself */
+        padding: 10px; /* Optional: you can adjust this if needed */
+    }
+    
+    
     .stats {
         grid-template-columns: 1fr;
         max-width: 300px;

@@ -38,13 +38,6 @@
     </nav>
 
 
-    <form>      
-      <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-      <input name="email" type="text" class="feedback-input" placeholder="Email" />
-      <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-      <input type="submit" value="SUBMIT"/>
-    </form>
-
     <script>
       const toggleButton = document.querySelector('.toggle-button');
       const navbarLinks = document.querySelector('.navbar-links');
@@ -53,4 +46,55 @@
           navbarLinks.classList.toggle('active');
           toggleButton.classList.toggle('active'); // Add this to trigger animation
       });
-  </script>
+    </script>
+
+
+    <div class="container">
+      <div class="contact-form">
+          <form>
+              <input name="name" type="text" class="feedback-input" placeholder="Name" />
+              <input name="email" type="text" class="feedback-input" placeholder="Email" />
+              <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+              <input type="submit" value="SUBMIT"/>
+          </form>
+      </div>
+
+      <div class="contact-info">
+          <h2>Contact Information</h2>
+          <div class="contact-details">
+              <p><i>📍</i> 1437/7/A, Sri Subadrarama Temple Road, Pannipitiya </p>
+              <p><i>📧</i> Pujanarathnayake@gmail.com</p>
+              <p><i>📞</i> +94763624525</p>
+              <p><i>⏰</i> Monday - Friday: 9:00 AM - 6:00 PM</p>
+          </div>
+      </div>
+    </div>
+  
+   
+
+
+
+    <footer class="footer">
+      <div class="footer-content">
+          <ul class="quick-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+          
+          <ul class="social-links">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">LinkedIn</a></li>
+          </ul>
+          
+          <div class="copyright">
+              © 2024 Pujana Rathnayake. All Rights Reserved.
+          </div>
+      </div>
+    </footer>
+
+  </body>
+
