@@ -6,8 +6,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Pujana Rathnayake - Portfolio </title>
-    <link rel="stylesheet" href="index.css">
+    <title>Pujana Rathnayake</title>
+    <link rel="stylesheet" href="main.css">
 
   </head>
 
@@ -25,22 +25,22 @@
       </a>
       <div class="navbar-links">
           <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Contact</a></li>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
       </div>
   </nav>
 
-
+    <!-- Toggle button implementation -->
   <script>
     const toggleButton = document.querySelector('.toggle-button');
     const navbarLinks = document.querySelector('.navbar-links');
 
     toggleButton.addEventListener('click', () => {
         navbarLinks.classList.toggle('active');
-        toggleButton.classList.toggle('active'); // Add this to trigger animation
+        toggleButton.classList.toggle('active'); 
     });
   </script>
 
@@ -49,17 +49,16 @@
 </head>
 
 <body class="pcards">
-  <div class="container">
+  <div class="cardcontainer">
       <div class="projects-grid">
-          <!-- Project Card 1 -->
+          <!--  Card 1 -->
           <div class="project-card">
               <div class="project-image">
-                  <!-- Replace the src with your image URL -->
                   <img src="ecolyproject.jpeg" alt="E-Commerce Platform">
               </div>
               <div class="project-content">
-                  <h3 class="project-title">E-Commerce Platform</h3>
-                  <p class="project-description">A full-stack e-commerce solution with shopping cart functionality and payment integration.</p>
+                  <h3 class="project-title">ECOLY - App</h3>
+                  <p class="project-description">A full-stack waste management app with user friendly interaction .</p>
                   <div class="project-tags">
                       <span class="tag">React</span>
                       <span class="tag">Node.js</span>
@@ -68,15 +67,14 @@
               </div>
           </div>
 
-          <!-- Project Card 2 -->
+          <!-- Card 2 -->
           <div class="project-card">
               <div class="project-image">
-                  <!-- Replace the src with your image URL -->
-                  <img src="ecolyproject.jpeg" alt="Weather App">
+                  <img src="project2.png" alt="Weather App">
               </div>
               <div class="project-content">
-                  <h3 class="project-title">Weather App</h3>
-                  <p class="project-description">Real-time weather forecasting application using weather API integration.</p>
+                  <h3 class="project-title">Currency Converter</h3>
+                  <p class="project-description">Real-time currency converter application using currency API integration.</p>
                   <div class="project-tags">
                       <span class="tag">JavaScript</span>
                       <span class="tag">API</span>
@@ -85,11 +83,10 @@
               </div>
           </div>
 
-          <!-- Project Card 3 -->
+          <!--  Card 3 -->
           <div class="project-card">
               <div class="project-image">
-                  <!-- Replace the src with your image URL -->
-                  <img src="ecolyproject.jpeg" alt="Task Manager">
+                  <img src="project3.jpg" alt="Task Manager">
               </div>
               <div class="project-content">
                   <h3 class="project-title">Task Manager</h3>
@@ -105,8 +102,7 @@
           <!-- Project Card 4 -->
           <div class="project-card">
               <div class="project-image">
-                  <!-- Replace the src with your image URL -->
-                  <img src="ecolyproject.jpeg" alt="Portfolio Website">
+                  <img src="projectportfolio.png" alt="Portfolio Website">
               </div>
               <div class="project-content">
                   <h3 class="project-title">Portfolio Website</h3>
@@ -126,19 +122,19 @@
 
     <footer class="footer">
       <div class="footer-content">
-          <ul class="quick-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
-          
-          <ul class="social-links">
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">LinkedIn</a></li>
-          </ul>
+        <ul class="quick-links">
+          <li><a href="main.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+      
+      <ul class="social-links">
+          <li><a href="https://web.facebook.com/">Facebook</a></li>
+          <li><a href="https://x.com/Pujana_R">Twitter</a></li>
+          <li><a href="https://github.com/pujanar">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/pujana-rathnayake-a88235245/">LinkedIn</a></li>
+      </ul>
           
           <div class="copyright">
               © 2024 Pujana Rathnayake. All Rights Reserved.

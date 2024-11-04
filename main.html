@@ -6,8 +6,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Pujana Rathnayake - Portfolio </title>
-    <link rel="stylesheet" href="index.css">
+    <title>Pujana Rathnayake</title>
+    <link rel="stylesheet" href="main.css">
 
   </head>
 
@@ -16,7 +16,7 @@
         <header>
 
                 <nav class="navbar">
-                    <div class="brand-title">Pujana </div>
+                    <div class="brand-title">Pujana</div>
                     <a href="#" class="toggle-button">
                         <span class="bar"></span>
                         <span class="bar"></span>
@@ -24,13 +24,16 @@
                     </a>
                     <div class="navbar-links">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="main.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="project.html">Projects</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
+                
+
+                 <!-- Toggle button implementation -->
 
                 <script>
                 const toggleButton = document.querySelector('.toggle-button');
@@ -38,7 +41,7 @@
             
                 toggleButton.addEventListener('click', () => {
                     navbarLinks.classList.toggle('active');
-                    toggleButton.classList.toggle('active'); // Add this to trigger animation
+                    toggleButton.classList.toggle('active'); 
                 });
             </script>
     
@@ -47,7 +50,7 @@
 
     
 
-    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+    <section>
             <div class="container">
                 <div class="row">
                     
@@ -56,6 +59,8 @@
                             <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
                             <h1 class="animated animated-text">
                                 <span class="mr-2">Hii, I'm </span>
+
+                                <!-- Animated info using keyframes -->
                                     <div class="animated-info">
                                         <span class="animated-item"> Pujana Rathnayake </span>
                                         <span class="animated-item">a Developer</span>
@@ -63,9 +68,9 @@
                                     </div>
                             </h1>
 
-                            <p>Computer science undergraduate with a passion for software development and technology. I enjoy coding, problem-solving, and creating innovative solutions. Welcome to my portfolio, where you can explore my projects and achievements in software development." </p>
+                            <p>Computer science undergraduate with a passion for software development and technology. I enjoy coding, problem-solving, and creating innovative solutions. Welcome to my portfolio, where you can explore my details and projects in software development." </p>
                             
-                            <a href="#" class="btn-about">About Me</a>
+                            <a href="about.html" class="btn-about">About Me</a>
                         
                             
                             </div>
@@ -86,17 +91,17 @@
         <footer class="footer">
             <div class="footer-content">
                 <ul class="quick-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 
                 <ul class="social-links">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="https://web.facebook.com/">Facebook</a></li>
+                    <li><a href="https://x.com/Pujana_R">Twitter</a></li>
+                    <li><a href="https://github.com/pujanar">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/pujana-rathnayake-a88235245/">LinkedIn</a></li>
                 </ul>
                 
                 <div class="copyright">

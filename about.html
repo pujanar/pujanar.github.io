@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pujana Rathnayake</title>
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
 
 </head>
 <body>
 
 
     <nav class="navbar">
-        <div class="brand-title">Pujana </div>
+        <div class="brand-title">Pujana</div>
         <a href="#" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -20,22 +19,22 @@
         </a>
         <div class="navbar-links">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-
+        <!-- Toggle button implementation  -->
     <script>
         const toggleButton = document.querySelector('.toggle-button');
         const navbarLinks = document.querySelector('.navbar-links');
     
         toggleButton.addEventListener('click', () => {
             navbarLinks.classList.toggle('active');
-            toggleButton.classList.toggle('active'); // Add this to trigger animation
+            toggleButton.classList.toggle('active'); 
         });
     </script>
     
@@ -44,28 +43,30 @@
             <div class="about-content">
                 <h1>About Me</h1>
                 <h2>Web Developer & Designer</h2>
-                <p>Hi a passionate web developer and designer with over 5 years of experience in creating beautiful, functional websites and applications. I specialize in front-end development and user interface design.</p>
+                <p>I'm a passionate web developer and tech enthusiastic with over 2 years of experience in creating beautiful, functional websites and applications. I specialize in front-end and back end development.</p>
                 <p>My approach combines creativity with technical expertise to deliver exceptional digital experiences that not only look great but also perform seamlessly.</p>
                 
                 <div class="stats">
                     <div class="stat-item">
-                        <div class="stat-number">5+</div>
+                        <div class="stat-number">2+</div>
                         <div class="stat-label">Years Experience</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">100+</div>
+                        <div class="stat-number">20+</div>
                         <div class="stat-label">Projects Completed</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">Happy Clients</div>
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Clients</div>
                     </div>
                 </div>
             </div>
 
+            <!-- Floating animation with profile picture -->
+
             <div class="about-image-container">
                 <div class="about-image">
-                    <!-- Replace with your image URL -->
+                    
                     <img src="PR.jpg" alt="Profile Image">
                 </div>
             </div>
@@ -77,17 +78,17 @@
     <footer class="footer">
         <div class="footer-content">
             <ul class="quick-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             
             <ul class="social-links">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">LinkedIn</a></li>
+                <li><a href="https://web.facebook.com/">Facebook</a></li>
+                <li><a href="https://x.com/Pujana_R">Twitter</a></li>
+                <li><a href="https://github.com/pujanar">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/pujana-rathnayake-a88235245/">LinkedIn</a></li>
             </ul>
             
             <div class="copyright">
